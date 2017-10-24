@@ -1,5 +1,12 @@
-#FUNCTION TO APPLY EXPONENTIAL RATES TO VARIABLES
-#LIMITATION IS THAT IT DOES NOT SEEM TO WORK FOR LARGER FUNCTIONS
+#' Exp transformation
+#'
+#' User sets rates, which transforms the input variable, outputting in a new table.
+#' @param data data.table that holds the variable to be transformed
+#' @param variable Character string of the variable to be transformed
+#' @param rate One (or many) rates to adstock the variable
+#' @keywords Exp
+#' @import data.table
+#' @export
 
 exp1 <- function (data, variable, rate)
 { 
